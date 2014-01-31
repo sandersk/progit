@@ -1,0 +1,30 @@
+{
+  "files": [
+    "en/01-introduction/01-chapter1.markdown",
+    "az/01-introduction/01-chapter1.markdown",
+    "fr/01-introduction/01-chapter1.markdown"
+  ],
+  "formats": {
+    "pdf": {
+      "version": false,
+      "index": false,
+      "toc": true
+    },
+    "epub": {
+      "index": false,
+      "toc": false,
+      "epubcheck": false
+    },
+    "mobi": {
+      "index": false,
+      "toc": false
+    },
+    "html": {
+      "index": false,
+      "toc": false,
+      "consolidated": false
+    }
+  },
+  "theme": "oreillymedia/atlas_tech1c_theme",
+  "title": "progit"
+}
