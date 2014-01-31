@@ -1,8 +1,8 @@
 {
   "files": [
     "en/01-introduction/01-chapter1.markdown",
-    "az/01-introduction/01-chapter1.markdown",
-    "fr/01-introduction/01-chapter1.markdown"
+    "fr/01-introduction/01-chapter1.markdown",
+    "hu/01-introduction/01-chapter1.markdown"
   ],
   "formats": {
     "pdf": {
