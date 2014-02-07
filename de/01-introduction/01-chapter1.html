@@ -1,55 +1,5 @@
 <section data-type="chapter">
 
-<!-- ### Your Editor ###-->
-### Dein Editor ###
-
-<!-- Now that your identity is set up, you can configure the default text editor that will be used when Git needs you to type in a message. By default, Git uses your system’s default editor, which is generally Vi or Vim. If you want to use a different text editor, such as Emacs, you can do the following:-->
-
-<p>Nachdem Du Deine Identität jetzt konfiguriert hast, kannst Du einstellen, welchen Texteditor Git in Situationen verwenden soll, in denen Du eine Nachricht eingeben musst. Normalerweise verwendet Git den Standard-Texteditor Deines Systems – das ist üblicherweise Vi oder Vim. Wenn Du einen anderen Texteditor, z.B. Emacs, verwenden willst, kannst Du das wie folgt festlegen:</p>
-<pre data-type='programlisting'>$ git config --global core.editor emacs</pre>
-<!-- ### Your Diff Tool ###-->
-### Dein Diff Programm ###
-
-<!-- Another useful option you may want to configure is the default diff tool to use to resolve merge conflicts. Say you want to use vimdiff:-->
-
-<p>Eine andere nützliche Einstellung, die Du möglicherweise vornehmen willst, ist welches Diff Programm Git verwendet. Mit diesem Programm kannst Du Konflikte auflösen, die während der Arbeit mit Git manchmal auftreten. Wenn Du beispielsweise vimdiff verwenden willst, kannst Du das so festlegen:</p>
-<pre data-type='programlisting'>$ git config --global merge.tool vimdiff</pre>
-<!-- Git accepts kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, and opendiff as valid merge tools. You can also set up a custom tool; see Chapter 7 for more information about doing that.-->
-
-<p>Git kann von Hause aus mit den folgenden Diff Programmen arbeiten: kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, and opendiff. Außerdem kannst Du ein eigenes Programm aufsetzen. Wir werden in Kapitel 7 darauf eingehen, wie das geht.</p>
-<!-- ### Checking Your Settings ###-->
-### Deine Einstellungen überprüfen ###
-
-<!-- If you want to check your settings, you can use the `git config -\-list` command to list all the settings Git can find at that point:-->
-
-<p>Wenn Du Deine Einstellungen überprüfen willst, kannst Du mit dem Befehl <code>git config --list</code> alle Einstellungen anzuzeigen, die Git an dieser Stelle (z.B. innerhalb eines bestimmten Projektes) bekannt sind:</p>
-<pre data-type='programlisting'>$ git config --list
-user.name=Scott Chacon
-user.email=schacon@gmail.com
-color.status=auto
-color.branch=auto
-color.interactive=auto
-color.diff=auto
-...</pre>
-<!-- You may see keys more than once, because Git reads the same key from different files (`/etc/gitconfig` and `~/.gitconfig`, for example). In this case, Git uses the last value for each unique key it sees.-->
-
-<p>Manche Variablen werden möglicherweise mehrfach aufgelistet, weil Git dieselbe Variable in verschiedenen Dateien (z.B. <code>/etc/gitconfig</code> und <code>~/.gitconfig</code>) findet. In diesem Fall verwendet Git dann den jeweils zuletzt aufgelisteten Wert.</p>
-<!-- You can also check what Git thinks a specific key’s value is by typing `git config {key}`:-->
-
-<p>Außerdem kannst Du mit dem Befehl <code>git config {key}</code> prüfen, welchen Wert Git für einen bestimmten Variablennamen verwendet:</p>
-<pre data-type='programlisting'>$ git config user.name
-Scott Chacon</pre>
-<!-- ## Getting Help ##-->
-## Hilfe finden ##
-
-<!-- If you ever need help while using Git, there are three ways to get the manual page (manpage) help for any of the Git commands:-->
-
-<p>Falls Du jemals Hilfe in der Anwendung von Git benötigst, gibt es drei Möglichkeiten, die entsprechende Seite aus der Dokumentation (manpage) für jeden Git Befehl anzuzeigen:</p>
-<pre data-type='programlisting'>$ git help &lt;verb&gt;
-$ git &lt;verb&gt; --help
-$ man git-&lt;verb&gt;</pre>
-<!-- For example, you can get the manpage help for the config command by running-->
-
 <p>Beispielsweise erhältst Du die Hilfeseite für den <code>git config</code> Befehl so:</p>
 <pre data-type='programlisting'>$ git help config</pre>
 <!-- These commands are nice because you can access them anywhere, even offline.-->
